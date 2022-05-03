@@ -1,6 +1,6 @@
-# Practice4EvenOdd
+# #4: Practicing Property & Event Binding and View Encapsulation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+Practice #4 for Maximillian Schwarzmüller Angular course
 
 ## Development server
 
