@@ -1,0 +1,26 @@
+.list {
+  background-color: #ddd;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 16px 24px 8px;
+
+  .list-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .items-container {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .item {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius);
+    margin-bottom: 8px;
+    padding: 10px;
+  }
+}

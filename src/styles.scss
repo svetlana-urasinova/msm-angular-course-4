@@ -4,6 +4,7 @@
 :root {
   --black: #000000;
   --white: #ffffff;
+  --light-grey: #eaeaea;
   --text-main: #333333;
   --shadow: rgba(0, 0, 0, 0.3);
   --grey-light: #cccccc;
@@ -25,20 +26,4 @@ html, body {
   background-color: var(--white);
   color: var(--text-main);
   font: normal 14px 'Roboto', sans-serif;
-}
-
-.numbers {
-  background-color: #ddd;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  font-size: 16px;
-  list-style-type: none;
-  padding: 16px 24px 8px;
-
-  li {
-    box-shadow: var(--box-shadow-light);
-    border-radius: var(--border-radius);
-    margin-bottom: 8px;
-    padding: 10px;
-  }
 }

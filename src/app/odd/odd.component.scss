@@ -1,3 +1,8 @@
-.odd {
-  background-color: #eaeaea;
+@import './../../assets/scss/list.scss';
+
+.number {
+  color: var(--green);
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 3px;
 }

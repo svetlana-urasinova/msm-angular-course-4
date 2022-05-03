@@ -1,3 +1,8 @@
-.even {
-  background-color: #ffffff;
+@import './../../assets/scss/list.scss';
+
+.number {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 3px;
 }
