@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,15 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'practice-4-even-odd';
-
-  public numbers: number[] = [];
+  public evens: number[] = [];
+  public odds: number[] = [];
 
   public onNumberAdded(newNumber: number) {
-    this.numbers.push(newNumber);
+    if (newNumber % 2) {
+      this.odds.push(newNumber);
+    } else {
+      this.evens.push(newNumber);
+    }
   }
 
   public onClear() {
-    this.numbers.length = 0;
+    this.evens.length = 0;
+    this.odds.length = 0;
   }
 }

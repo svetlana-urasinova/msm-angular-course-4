@@ -1,1 +1,8 @@
-<li class="even">{{ number }}: even</li>
+<div class="list">
+  <h2 class="list-title">Even numbers</h2>
+  <ul class="items-container" *ngIf="numbers.length > 0">
+    <li class="item" *ngFor="let number of numbers">
+      <span class="number">{{ number }}</span> is an even number
+    </li>
+  </ul>
+</div>

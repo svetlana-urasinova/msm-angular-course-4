@@ -3,10 +3,6 @@
     (numberAdded)="onNumberAdded($event)"
     (clear)="onClear()"
   ></app-game-control>
-  <ul class="numbers" *ngIf="numbers.length > 0">
-    <ng-container class="number-container" *ngFor="let number of numbers">
-      <even-number *ngIf="number % 2 === 0" [number]="number"></even-number>
-      <odd-number *ngIf="number % 2 === 1" [number]="number"></odd-number>
-    </ng-container>
-  </ul>
+  <odd-number [numbers]="odds"></odd-number>
+  <even-number [numbers]="evens"></even-number>
 </div>

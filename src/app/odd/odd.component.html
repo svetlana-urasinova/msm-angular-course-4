@@ -1,1 +1,8 @@
-<li class="odd">{{ number }}: odd</li>
+<div class="list">
+  <h2 class="list-title">Odd numbers</h2>
+  <ul class="items-container" *ngIf="numbers.length > 0">
+    <li class="item" *ngFor="let number of numbers">
+      <span class="number">{{ number }}</span> is an odd number
+    </li>
+  </ul>
+</div>
