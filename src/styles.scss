@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+@import './assets/scss/buttons.scss';
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --text-main: #333333;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --grey-light: #cccccc;
+  --primary: #1e88e5;
+  --primary-darker: #1976d2;
+  --primary-lighter: #2196f3;
+  --red: #e53935  ;
+  --red-darker: #d32f2f;
+  --red-lighter: #f44336;
+  --green: #43a047;
+  --green-darker: #388e3c;
+  --green-lighter: #4caf50;
+  --box-shadow: 0 2px 5px var(--shadow);
+  --box-shadow-light: 0px 8px 24px var(--shadow);
+  --border-radius: 6px;
+}
+
+html, body {
+  background-color: var(--white);
+  color: var(--text-main);
+  font: normal 14px 'Roboto', sans-serif;
+}
+
+.numbers {
+  background-color: #ddd;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  font-size: 16px;
+  list-style-type: none;
+  padding: 16px 24px 8px;
+
+  li {
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius);
+    margin-bottom: 8px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,47 @@
+.controls-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+
+  .control-button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--white);
+    cursor: pointer;
+    font: 600 14px 'Roboto', sans-serif;
+    outline: none;
+    padding: 8px 24px;
+    text-align: center;
+    transition: ease-in-out 0.2s;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: var(--primary-darker);
+    }
+
+    &.red:not(:disabled) {
+      background-color: var(--red);
+
+      &:hover {
+        background-color: var(--red-darker);
+      }
+    }
+
+    &.green:not(:disabled) {
+      background-color: var(--green);
+
+      &:hover {
+        background-color: var(--green-darker);
+      }
+    }
+
+    &:disabled {
+      background-color: var(--grey-light);
+      cursor: default;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<div class="game-control">
+  <div class="controls-container">
+    <button
+      class="control-button blue"
+      [disabled]="isGameActive"
+      (click)="startHandler()"
+    >
+      {{ isGameActive || number > 0 ? "Resume" : "Start" }}
+    </button>
+    <button
+      class="control-button red"
+      [disabled]="!isGameActive"
+      (click)="stopHandler()"
+    >
+      Stop
+    </button>
+    <button class="control-button green" (click)="clearHandler()">Clear</button>
+  </div>
+</div>
