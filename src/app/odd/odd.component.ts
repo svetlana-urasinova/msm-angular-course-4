@@ -1,14 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'odd-number',
   templateUrl: './odd.component.html',
   styleUrls: ['./odd.component.scss'],
 })
-export class OddComponent implements OnInit {
+export class OddComponent {
   @Input() public numbers: number[] = [];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

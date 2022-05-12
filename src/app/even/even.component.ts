@@ -1,14 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'even-number',
   templateUrl: './even.component.html',
   styleUrls: ['./even.component.scss'],
 })
-export class EvenComponent implements OnInit {
+export class EvenComponent {
   @Input() public numbers: number[] = [];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }
